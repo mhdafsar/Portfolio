@@ -18,11 +18,17 @@ body{
     background-image: url(images/update_desk_background.png);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 .container{
-    padding: 10px 10%;
+    padding: 1px 10%;
 }
 nav{
+    height: 80px;
+    position: fixed;
+    width: 80%;
+    background-color: #faf7f0;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -346,7 +352,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/Updated_mobile_background.png);
+        background-image: url(images/up-mobile-back.png);
         background-size: cover;
         background-position: center;
     }
