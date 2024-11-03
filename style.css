@@ -3,7 +3,8 @@
     padding: 0;
     /* font-family: 'Poppins', sans-serif; */
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Montserrat';
 }
 html{
     scroll-behavior: smooth;
@@ -47,6 +48,7 @@ nav ul li a{
     text-decoration: none;
     font-size: 18px;
     position: relative;
+    font-weight:600;
 }
 nav ul li a::after{
     content: '';
@@ -80,8 +82,9 @@ nav ul li a:hover::after{
 /* -------------------about-------------------- */
 
 #about{
-    padding: 80px 0;
+    padding: 100px 0;
     color: #080808;
+    padding-bottom: 30px;
 }
 .row{
     display: flex;
@@ -100,11 +103,18 @@ nav ul li a:hover::after{
     /* border: #ff004f 3px solid; */
     /* width: 100%; */
     border-radius: 15px;
-    background: #d8d2c2;
+    background: #faf7f0;
 }
 .about-col-2{
     /* border: #880000 3px solid; */
     flex-basis: 60%;
+}
+.about-col-2 h1{
+    margin-bottom: 10px;
+}
+.about-col-2 p{
+    font-size: 3vh;
+    margin-bottom: 10px;
 }
 .sub_title{
     font-size: 60px;
@@ -141,7 +151,7 @@ nav ul li a:hover::after{
 }
 .tab_contents ul li span{
     color: #880000;
-    font-size: 14px;
+    font-size: 3vh;
 }
 .tab_contents{
     display: none;
@@ -151,7 +161,7 @@ nav ul li a:hover::after{
 }
 /* ------------------Services------------------- */
 #services{
-    padding: 30px 0;
+    padding: 70px 0;
 }
 .services_list{
     display: grid;
@@ -191,13 +201,13 @@ nav ul li a:hover::after{
 /* -----------------portfolio-------------------- */
 
 #portfolio{
-    padding: 50px 0 ;
+    padding: 60px 0 ;
 }
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .work{
     border-radius: 10px;
@@ -213,7 +223,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f );
+    background: linear-gradient(rgba(160, 98, 98, 0.329),#b7003a );
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -233,7 +243,7 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 .layer p{
-    color: #faf7f0;
+    color: #ffffff;
     font-size: 14px;
 }
 .layer a{
@@ -258,12 +268,12 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width:fit-content;
-    border: 1px solid #ff004f;
+    /* border: 1px solid #ff004f; */
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #ffffff;
-    background-color: #080808;
+    background-color: #800020;
     transition: 0.5s;
 }
 .btn:hover{
@@ -282,7 +292,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i {
-    color: #ff004f;
+    color: #b17457;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -293,17 +303,17 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ff004f;
+    color: #b17457;
     display: inline-block;
     transition: transform 0.3s;
 }
 .social-icons a:hover{
-    color:#8f002d;
+    color:#883914;
     transform: translateY(-5px);
 }
 .btn.btn2 {
     display: inline-block;
-    background-color: #080808;
+    background-color: #800020;
 }
 .btn.btn2:hover{
     background: #ff004f;
@@ -315,10 +325,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #d8d2c2;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #4a4947;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -327,13 +337,14 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    border: none;
 
 }
 .copyright{
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #afafaf;
+    background: #faf7f0;
     font-weight: 500;
     margin-top: 20px;
 }
@@ -359,12 +370,15 @@ nav .fas{
         background-attachment:scroll;
     }
     .header_text{
-        margin-top: 40%;
-        font-size: 16px;
+        margin-top: 45%;
+        
     }
     .header_text h1{
-        font-size: 30px;
-        margin-bottom:18%;
+        font-size:xx-large;
+        margin-bottom:15%;
+    }
+    .header_text p{
+        font-size: larger;
     }
     nav .fas{
         display: block;
