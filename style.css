@@ -353,8 +353,10 @@ nav .fas{
 @media only screen and (max-width: 600px){
     #header{
         background-image: url(images/up-mobile-back.png);
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size:cover;
         background-position: center;
+        background-attachment:scroll;
     }
     .header_text{
         margin-top: 40%;
