@@ -160,17 +160,17 @@ nav ul li a:hover::after{
 .tab_contents.active_tab{
     display: block;
 }
-/* ------------------Services------------------- */
-#services{
+/* ------------------Skills------------------- */
+#skills{
     padding: 70px 0;
 }
-.services_list{
+.skills_list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services_list div{
+.skills_list div{
     background: #ffc8a8;
     padding: 40px;
     font-size: 13px;
@@ -178,16 +178,16 @@ nav ul li a:hover::after{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.services_list div i{
+.skills_list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services_list div h2{
+.skills_list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services_list div a{
+.skills_list div a{
     text-decoration: none;
     color: #880000;
     font-size:20px ;
@@ -195,17 +195,17 @@ nav ul li a:hover::after{
     display: inline-block;
     font-weight: 500;
 }
-.services_list div:hover{
+.skills_list div:hover{
     background: #ffa978;
     transform: translateY(-10px);
 }
-.services_list div p{
+.skills_list div p{
     font-size:15px ;
     font-weight: 400; 
 }
 /* -----------------portfolio-------------------- */
 
-#portfolio{
+#projects{
     padding: 60px 0 ;
 }
 .work-list{
@@ -368,7 +368,7 @@ nav .fas{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/up-mobile-back.png);
+        background-image: url(images/updated_mobile_bacckground.png);
         background-repeat: no-repeat;
         background-size:cover;
         background-position: center;

@@ -20,8 +20,8 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
@@ -54,7 +54,7 @@
                     <p class="tab_links" onclick="opentab('education')">Education</p>
                 </div>
 
-                <div class="tab_contents active_tab" id="skills">
+                <div class="tab_contents active_tab" id="skill">
                     <ul>
                         <li> <span>Full Stack Developer</span> <br>Full Stack Development</li>
                         <li><span>Web Developer</span> <br>Web Development</li>
@@ -81,11 +81,11 @@
         </div>
     </div>
 </div>
-<!-- --------------------------------------Services--------------------------------- -->
-<div id="services">
+<!-- --------------------------------------Skills--------------------------------- -->
+<div id="skills">
     <div class="container">
         <h1 class="sub_title">My Services</h1>
-        <div class="services_list">
+        <div class="skills_list">
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Full Stack Development</h2>
@@ -110,9 +110,9 @@
     </div>
 </div>
 <!-- ------------------portfolio---------------------- -->
-<div id="portfolio">
+<div id="projects">
     <div class="container">
-        <h1 class="sub_title">My Work</h1>
+        <h1 class="sub_title">My Projects</h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/third_eye.jpg" alt="">
@@ -215,11 +215,12 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         .then(response => {
-            msg.innerHTML = "Message Sent successfully"
+         msg.innerHTML = "Message Sent successfully"
+            form.reset()
+            
             setTimeout(function(){
                 msg.innerHTML = ""
-            },5000)
-            form.reset()
+            },5000);
         })
         .catch(error => console.error('Error!', error.message))
     })
