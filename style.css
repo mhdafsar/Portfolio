@@ -46,7 +46,7 @@ nav ul li {
 nav ul li a{
     color: #080808;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     font-weight:600;
 }
@@ -54,7 +54,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #c00030;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -101,6 +101,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     /* padding-left: 100px;  */
     width: 400px; 
+    margin-top: 20px;
     /* border: #ff004f 3px solid; */
     /* width: 100%; */
     border-radius: 15px;
@@ -108,13 +109,13 @@ nav ul li a:hover::after{
 }
 .about-col-2{
     /* border: #880000 3px solid; */
-    flex-basis: 60%;
+    flex-basis: 55%;
 }
 .about-col-2 h1{
     margin-bottom: 10px;
 }
 .about-col-2 p{
-    font-size: 2.5vh;
+    font-size: 3vh;
     margin-bottom: 10px;
 }
 .sub_title{
@@ -137,7 +138,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #c00030;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -161,7 +162,7 @@ nav ul li a:hover::after{
     display: block;
 }
 /* ------------------Skills------------------- */
-#skills{
+/* #skills{
     padding: 70px 0;
 }
 .skills_list{
@@ -202,7 +203,58 @@ nav ul li a:hover::after{
 .skills_list div p{
     font-size:15px ;
     font-weight: 400; 
+} */
+
+/* --------------------new skills-------------------------- */
+#skills{
+    padding: 70px 0;
 }
+.container {
+  /* max-width: 1200px; */
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.card {
+  width: 100px;
+  height: 120px;
+  background-color: #800020;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  box-shadow: 0 3px 7px #3c000f;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color:  #c00030;
+    transition: 0.5s;
+
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+
+
 /* -----------------portfolio-------------------- */
 
 #projects{
@@ -228,7 +280,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(160, 98, 98, 0.329),#b7003a );
+    background: linear-gradient(rgba(160, 98, 98, 0.329),#c00030 );
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -253,7 +305,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff004f;
+    color: #c00030;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -282,7 +334,7 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #c00030;
     
 }
 
@@ -321,7 +373,7 @@ nav ul li a:hover::after{
     background-color: #800020;
 }
 .btn.btn2:hover{
-    background: #ff004f;
+    background: #c00030;
 }
 .contact-right form{
     width: 100%;
@@ -354,13 +406,13 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f ;
+    color: #c00030 ;
 }
 
 #msg{
     margin-top: -40px;
     display: block;
-    color: #ff004f;
+    color: #c00030;
 }
 /* ------------------css for small screen --------------- */
 nav .fas{
@@ -455,4 +507,20 @@ nav .fas{
     .copyright{
         font-size: 13px;
     }
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card p {
+        width: 80px;
+        height: 100px; 
+        font-size: 12px;
+        
+    }
 }
+
